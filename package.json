@@ -1,0 +1,19 @@
+{
+  "name": "jQueryTypewriter",
+  "version": "1.0.0",
+  "description": "jQuery plugin for text appearing character by character",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allisonplus/jquery-typewriter.git"
+  },
+  "author": "Allison Tarr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allisonplus/jquery-typewriter/issues"
+  },
+  "homepage": "https://github.com/allisonplus/jquery-typewriter"
+}
