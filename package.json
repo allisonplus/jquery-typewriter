@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/allisonplus/jquery-typewriter/issues"
   },
-  "homepage": "https://github.com/allisonplus/jquery-typewriter"
+  "homepage": "https://github.com/allisonplus/jquery-typewriter",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.2"
+  }
 }
