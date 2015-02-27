@@ -40,10 +40,11 @@ $.fn.typewriter = function() {
 				clearInterval(type);
 			}
 			// The number below is the milliseconds of our interval
-		},200);
+		},250);
 
 };  // ends fn.typewriter
 
+// POTENTIAL CUSTOMIZATION OPTIONS
 // What happens when it reaches the end of element?
-// Potential customization options
 // Typing speed, cursor showing, consistency of typing
+// Sound effects of typewriter
