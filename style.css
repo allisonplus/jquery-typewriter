@@ -5,7 +5,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-
 h1, h2, p {
 	font-family:serif;
 }
@@ -22,7 +21,19 @@ h2, p {
 	margin:80px;
 }
 
-/* class that will eventually be removed to letters in the for loop*/
+/* Class that will eventually be removed to letters in the for loop*/
 .typeAction {
 	visibility:hidden;
+}
+
+/*Below targets the cursor's animation & colour*/
+span {
+	padding-left:2px;
+	color: #595959;
+	animation: blink 700ms steps(1) infinite: ;
+  -webkit-animation: blink 700ms steps(1) infinite;
+}
+
+	@keyframes blink { 50% { color: transparent; } }
+	@-webkit-keyframes blink { 50% { color: transparent; } }
 }
