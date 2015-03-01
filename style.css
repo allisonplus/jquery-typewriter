@@ -6,7 +6,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 h1, h2, p {
-	font-family:serif;
+	font-family: 'Cutive Mono', serif;
 }
 
 h1 {
@@ -17,8 +17,14 @@ h2, p {
 	font-size:20px;
 }
 
+.content p a {
+	margin-top:15px;
+	text-decoration: none;
+}
+
 .wrapper {
 	margin:80px;
+	width:600px;
 }
 
 /* Class that will eventually be removed to letters in the for loop*/
@@ -29,7 +35,7 @@ h2, p {
 /*Below targets the cursor's animation & colour*/
 span {
 	padding-left:2px;
-	color: #595959;
+	/*color: #595959;*/
 	animation: blink 700ms steps(1) infinite: ;
   -webkit-animation: blink 700ms steps(1) infinite;
 }
