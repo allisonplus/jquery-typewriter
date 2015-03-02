@@ -4,26 +4,96 @@
 	<meta charset="UTF-8">
 	<title>jQuery Typewriter</title>
 	<link rel="stylesheet" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
-
+	<link href='http://fonts.googleapis.com/css?family=Questrial|Cutive+Mono' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 <div class="wrapper">
-	<div class="content" id="content">
-		<h2>N Y OCT 29<h2>
-		<h1>DEAR LUCY</h1>
-		<p>THE ENEMIES OF WOMEN'S LIBERATION IN THE ARTS WILL BE CRUSHED.
-		<p>LOVE</p>
-		<p>Nancy</p>
-		<p><a href=http://www.lettersofnote.com/2010/02/dear-lucy.html">From 1971, a succinct letter from Nancy Spero to Lucy Lippard</a></p>
-		</div>
-</div>
+	<div class="example">
+		<h1>jQuery Typewriter Plugin</h1>
+		<h2>“In the old days, writers used to sit in front of a typewriter & stare out of the window. Nowadays, because of the marvels of convergent technology, the thing you type on & the window you stare out of are now the same thing.”</h2>
+		<h2>Douglas Adams</h2>
+	</div>
+</div> <!--/.wrapper-->
 
-  <audio class="sound" src="typewriter.wav"></audio>
+<div class="wrapper">
+	<div class="markdown">
+		<p>A typewriter letter-by-letter effect that is great for adding emphasis to content.</p>
 
+		<h3>Instructions</h3>
+			<p>Download jquery.typewriter.js and included sound file. Put them into your project's root directory.</p>
+
+		<h3>Add Links in your HTML</h3>
+			<p>Paste the sound file and appropriate jQuery files into your HTML before the closing body tag as seen below.</p>
+
+		<div class="code">
+	<pre><code>
+	&lt;audio class="sound" src="typewriter.wav"&gt;&lt;/audio&gt;
+
+	&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt/script&gt;
+
+	&lt;script src="js/jquery.typewriter.js"&gt;&lt/script&gt;
+	</code></pre>
+		</div> <!--/.code-->
+
+		<h3>Add CSS Information</h3>
+			<p>Add the following code to your CSS file</p>
+				<div class="code">
+	<pre><code>
+	.typeAction {
+		visibility:hidden;
+	}
+	span {
+		padding-left:2px;
+		animation: blink 700ms steps(1) infinite: ;
+	  -webkit-animation: blink 700ms steps(1) infinite;
+	}
+		@keyframes blink { 50% { color: transparent; } }
+		@-webkit-keyframes blink { 50% { color: transparent; } }
+	}
+	</code></pre>
+				</div> <!--/.code-->
+
+		<h3>Initialize the Typewriter</h3>
+			<p>Paste the following code inside your primary JavaScript file to input and start the effect.</p>
+			<p>Note: Replace the 'h1' with the text element you'd like to focus the effect on.</p>
+				<div class="code">
+	<pre><code>
+	$(function() {
+		$('h1').typewriter({
+		});
+	});
+	</code></pre>
+				</div> <!--/.code-->
+
+		<h3>Customization Options</h3>
+		<ul>
+			<li>Typewriter Sound Effect</li>
+			<li>Visible Cursor</li>
+			<li>Cursor Color</li>
+			<li>Random Type Speed</li>
+		</ul>
+
+	<p>sound: Setting to true turns on the typewriter sound effect.</p>
+	<p>cursorVisible : Adjusting to false makes the blinking cursor disappear.</p>
+	<p>cursorColor : will be a shade of grey unless otherwise set.</p>
+	<p>randomTypeSpeed : setting to false will make the typing speed rhythmic.</p>
+
+	<pre><code>
+	$(function() {
+		$('h1').typewriter({
+			sound:true,
+			cursorVisible:false,
+			cursorColor:"#551A8B",
+			randomTypeSpeed:false,
+		});
+	});
+	</code></pre>
+	</div> <!-- end .markdown -->
+</div> <!--/.wrapper-->
+
+<audio class="sound" src="typewriter.wav"></audio>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 <script src="script.js"></script>
 <script src="jquery.typewriter.js"></script>
 	

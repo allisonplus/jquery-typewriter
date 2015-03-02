@@ -5,27 +5,91 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-h1, h2, p {
+h1, h2, h3, p {
+	color:black;
+}
+
+h1, h2 {
 	font-family: 'Cutive Mono', serif;
 }
 
 h1 {
-	font-size:24px;
+	text-align:center;
+	font-size:28px;
 }
 
-h2, p {
+h2, h3{
+	font-size:20px;
+	text-align: justify;
+}
+
+p, ul {
+	font-family: 'Questrial', sans-serif;
+}
+
+h3 {
 	font-size:20px;
 }
 
-.content p a {
-	margin-top:15px;
-	text-decoration: none;
+p, li {
+	font-size:20px;
+}
+
+body {
+	background:#2c3e50;
+}
+
+.example, .markdown {
+	background:white;
+	margin: 35px auto;
+	padding:10px 45px;
 }
 
 .wrapper {
-	margin:80px;
-	width:600px;
+	margin:5% 0;
 }
+
+.example {
+	width:50%;
+	border-radius:30px;
+}
+
+.markdown {
+	width:85%;
+	margin:0 8%;
+	padding:25px;
+	border-radius: 10px;
+}
+
+.markdown p:first-child {
+	text-align:center;
+}
+
+.markdown h3 {
+	padding-top:25px;
+}
+
+pre, code {
+	background:#c4d1de;
+	color:black;
+	margin:0 auto;
+	border-radius: 10px;
+}
+
+ul {
+	margin-bottom:25px;
+}
+
+ul li {
+	display:inline;
+	padding:0 55px;
+	font-size:20px;
+}
+
+/*ul em {
+	background: #2c3e50;
+}*/
+
 
 /* Class that will eventually be removed to letters in the for loop*/
 .typeAction {
@@ -34,8 +98,7 @@ h2, p {
 
 /*Below targets the cursor's animation & colour*/
 span {
-	padding-left:2px;
-	/*color: #595959;*/
+	padding-left:1px;
 	animation: blink 700ms steps(1) infinite: ;
   -webkit-animation: blink 700ms steps(1) infinite;
 }

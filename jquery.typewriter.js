@@ -1,7 +1,6 @@
 $.fn.typewriter = function(options) {
-
 		var settings = $.extend({
-				sound:true,
+				sound:false,
 				cursorVisible:true,
 				cursorColor:"#595959",
 				randomTypeSpeed:true,
@@ -25,6 +24,7 @@ $.fn.typewriter = function(options) {
 			$(this).append($('<span>').text(''));	
 		}
 
+		// Cursor Color
 		if (settings.cursorColor) {
 			$('#cursor').css("color", settings.cursorColor);
 		}
@@ -50,7 +50,7 @@ $.fn.typewriter = function(options) {
 
 			if (settings.randomTypeSpeed) {
 			// Defines a random time interval
-			var randTime = (Math.random() * 500); // 5 seconds in millisconds
+			var randTime = (Math.random() * 500); // 5 seconds in milliseconds
 			} else {
 				var randTime = 0;
 			}
@@ -76,9 +76,7 @@ $.fn.typewriter = function(options) {
 						// Shut it down
 						clearInterval(type);
 					}
-
 				}, randTime);
-
 
 		},500); // ends setInterval
 
