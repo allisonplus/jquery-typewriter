@@ -27,10 +27,6 @@ p, ul {
 	font-family: 'Questrial', sans-serif;
 }
 
-h3 {
-	font-size:20px;
-}
-
 p, li {
 	font-size:20px;
 }
@@ -41,8 +37,11 @@ body {
 
 .example, .markdown {
 	background:white;
-	margin: 35px auto;
-	padding:10px 45px;
+	padding:15px 45px;
+}
+
+.description {
+	margin-bottom:15px;
 }
 
 .wrapper {
@@ -52,28 +51,42 @@ body {
 .example {
 	width:50%;
 	border-radius:30px;
+	margin: 145px auto 80px;
 }
 
 .markdown {
 	width:85%;
 	margin:0 8%;
-	padding:25px;
 	border-radius: 10px;
 }
 
+.markdown a {
+	color:black;
+	border:1px solid #2c3e50;
+	text-decoration: none;
+	border-radius:10px;
+	padding:18px;
+}
+
+.markdown a:hover {
+	background:#2c3e50;
+	color:white;
+}
+
 .markdown p:first-child {
-	text-align:center;
+	margin-bottom:45px;
 }
 
 .markdown h3 {
 	padding-top:25px;
+	letter-spacing:2px;
 }
 
-pre, code {
+pre, code, .code {
 	background:#c4d1de;
 	color:black;
 	margin:0 auto;
-	border-radius: 10px;
+	border-radius: 3px;
 }
 
 ul {
@@ -85,11 +98,6 @@ ul li {
 	padding:0 55px;
 	font-size:20px;
 }
-
-/*ul em {
-	background: #2c3e50;
-}*/
-
 
 /* Class that will eventually be removed to letters in the for loop*/
 .typeAction {
