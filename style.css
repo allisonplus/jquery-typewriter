@@ -130,6 +130,21 @@ ul li {
 	padding-right:10px;
 }
 
+i.fa.fa-github.fa-5x {
+	text-align:center;
+	display:block;
+	padding:2% 0 0 0;
+}
+
+a.github {
+	text-decoration:none;
+}
+
+.made {
+	text-align:center;
+	padding-top:0;
+}
+
 
 /* Class that will eventually be removed to letters in the for loop*/
 .typeAction {
