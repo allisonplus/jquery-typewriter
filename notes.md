@@ -10,8 +10,7 @@ Download jquery.typewriter.js and put the file into your project's root director
 Remember to include the sound file and jQuery followed by the plugin script in your HTML document *before* the closing body tag.
 
 ```
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> ```
-```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/jquery.typewriter.js"></script>
 ```
 
