@@ -49,6 +49,21 @@ $(function() {
 ## Customization Options
 
 #### Sound
+(default:false) : Setting to true turns on the typewriter sound effect.
 #### Visible Cursor
+(default:true) : Adjusting to false makes the blinking cursor disappear.
 #### Cursor Color
+(default:grey) : Unless otherwise specified with hexadecimal code.
 #### Random Type Speed
+(default:true) : setting to false will make the typing speed rhythmic.
+
+```
+$(function() {
+	$('h1').typewriter({
+		sound:true,
+		cursorVisible:false,
+		cursorColor:"#551A8B",
+		randomTypeSpeed:false,
+	});
+});
+```
